@@ -31,6 +31,9 @@ The project contains a simple cli app ```meme.py```. The utility can be which ca
 The script must take three optional CLI arguments:
 
 ```--body``` a string quote body
+
 ```--author``` a string quote author
+
 ```--path``` an image path
+
 The script returns a path to a generated image. If any argument is not defined, a random selection is used.
