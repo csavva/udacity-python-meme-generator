@@ -4,6 +4,7 @@ from docx import Document
 from .IngestorInterface import IngestorInterface
 from .QuoteModel import QuoteModel
 
+
 class DocxIngestor(IngestorInterface):
     allowed_extensions = ['docx']
 

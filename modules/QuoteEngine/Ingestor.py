@@ -8,6 +8,7 @@ from .DocxIngestor import DocxIngestor
 from .CSVIngestor import CSVIngestor
 from .PDFIngestor import PDFIngestor
 
+
 class Ingestor(IngestorInterface):
     ingestors = [TextIngestor, DocxIngestor, CSVIngestor, PDFIngestor]
 

@@ -6,6 +6,7 @@ import random
 from .IngestorInterface import IngestorInterface
 from .QuoteModel import QuoteModel
 
+
 class PDFIngestor(IngestorInterface):
     allowed_extensions = ['pdf']
 

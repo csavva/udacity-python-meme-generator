@@ -58,9 +58,11 @@ def meme_form():
 def meme_post():
     """ Create a user defined meme """
 
-    url, body, author = request.form
+    image_url = request.form.get('image_url')
+    body = request.form.get('body')
+    author = request.form.get('author')
 
-    img = requests.get(url, allow_redirects=True)
+    img = requests.get(image_url, allow_redirects=True)
 
     file = f"./static/{random.randint(0, 100000000)}.jpg"
     open(file, 'wb').write(img.content)

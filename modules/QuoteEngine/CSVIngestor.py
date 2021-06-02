@@ -4,6 +4,7 @@ import pandas
 from .IngestorInterface import IngestorInterface
 from .QuoteModel import QuoteModel
 
+
 class CSVIngestor(IngestorInterface):
     allowed_extensions = ['csv']
 
