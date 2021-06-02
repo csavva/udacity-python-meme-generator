@@ -16,9 +16,21 @@ All required libraries are in the ```requirements.txt``` file.
 Use the following command to install in a new virtual environment
 ```pip install -r requirements.txt```
 
-## Running the app
+## Running the web app
 
 Use the following command to run the Flask app
 ```flask run --host 0.0.0.0 --port 3000 --reload```
 
 You can then access the app on the address http://0.0.0.0:3000
+
+
+## Running the Command-Line Interface tool
+
+The project contains a simple cli app ```meme.py```. The utility can be which can be run from the terminal by invoking ```python3 meme.py```
+
+The script must take three optional CLI arguments:
+
+```--body``` a string quote body
+```--author``` a string quote author
+```--path``` an image path
+The script returns a path to a generated image. If any argument is not defined, a random selection is used.
